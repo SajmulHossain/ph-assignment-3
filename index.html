@@ -14,25 +14,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <!-- tailwind configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              header: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)',
+              main: 'rgb(244, 244, 244)',
+              main_color: 'rgb(171, 239, 95)',
+              nav: 'rgb(115, 115, 115)',
+              para: 'rgb(73, 73, 73)',
+              heading: 'rgb(33, 33, 33)', 
+            },
+            fontFamily: {
+              Manrope: 'Manrope',
+            },
+          }
+        }
+      }
+    </script>
 </head>
-<body class="font-manrope">
+<body class="font-Manrope">
     <!-- header section start -->
-     <header class="max-w-screen-xl px-4 mx-auto pt-1 pb-12">
-        <nav class="navbar bg-base-100">
-            <div class="navbar-start flex gap-2">
-              <h3 class="bg-main-color"><i class="fa-solid fa-arrow-up"></i></h3>
-              <h3>Renterio</h3>
+     <header class="max-w-screen-xl px-4 mx-auto pt-1 pb-12 bg-header">
+      <nav class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="flex gap-1 items-center">
+            <h3 class="h-8 w-8 rounded-full bg-main_color flex justify-center items-center"><i class="fa-solid fa-arrow-up rotate-45"></i></h3>
+            <h3 class="text-2xl font-extrabold lg:text-3xl ">Rinterio</h3>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-[16px] font-normal text-nav">
+            <li class="text-para font-extrabold"><a>Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="gap-7 items-center hidden lg:flex">
+            <h3>
+              <i class="fa-solid fa-magnifying-glass"></i>
+             </h3>
+
+             <h3>
+              <i class="fa-solid fa-cart-shopping"></i>
+             </h3>
+
+             <div class="flex gap-2 bg-main_color py-3 px-5 rounded-full justify-center items-center text-xl font-extrabold text-heading">
+              <h3>Book Consult</h3>
+              <h3 class="bg-heading text-white h-8 w-8 rounded-full flex justify-center items-center"><i class="fa-solid fa-arrow-up rotate-45"></i></h3>
+             </div>
+          </div>
+
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a class="btn">Button</a>
-            </div>
-          </nav>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow">
+              <li class="text-para font-extrabold"><a>Home</a></li>
+              <li><a>Service</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
           <!-- banner section start -->
        <section class="text-center space-y-4">
@@ -48,9 +101,9 @@
     <!-- banner section end -->
      </header>
     <!-- header section end -->
-
+ 
     <!-- main section start --> 
-     <main class="px-4 py-8">
+     <main class="px-4 py-8 bg-main">
       <!-- about section start -->
        <section class="max-w-screen-xl mx-auto flex flex-col gap-6 lg:flex-row lg:items-center">
         <div class="flex flex-col items-center gap-4 relative lg:w-1/2 lg:items-start">
@@ -96,9 +149,9 @@
       <!-- about section end -->
 
       <!-- work process section start -->
-       <section class="max-w-screen-xl mx-auto mt-3">
-        <h4 class="text-[16px] font-bold mb-2 text-center"><i class="fa-solid fa-arrow-right"></i> How we works</h4>
-        <h2 class="text-2xl font-bold text-center mb-2">Our Works Process</h2>
+       <section class="max-w-screen-xl mx-auto mt-10">
+        <h4 class="text-[16px] font-bold mb-5 text-center"><i class="fa-solid fa-arrow-right"></i> How we works</h4>
+        <h2 class="text-2xl font-bold text-center mb-4">Our Works Process</h2>
         <p class="font-medium text-center text-[14px]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
 
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
