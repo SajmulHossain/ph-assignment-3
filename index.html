@@ -34,6 +34,9 @@
             fontFamily: {
               Manrope: 'Manrope',
             },
+            backgroundImage: {
+              bgImg: "url('assets/bg.jpg')",
+            }
           }
         }
       }
@@ -109,9 +112,9 @@
     <!-- header section end -->
  
     <!-- main section start --> 
-     <main class="px-4 py-8 bg-main">
+     <main class="bg-main">
       <!-- about section start -->
-       <section class="max-w-screen-xl mx-auto flex flex-col gap-6 lg:flex-row lg:items-center">
+       <section class="px-4 py-8 max-w-screen-xl mx-auto flex flex-col gap-6 lg:flex-row lg:items-center">
         <div class="flex flex-col items-center gap-4 relative lg:w-1/2 lg:items-start">
           <h4 class="bg-white w-fit py-2 px-4 rounded-full text-center text-[16px] font-bold"><i class="fa-solid fa-arrow-right"></i> About Us</h4>
 
@@ -155,7 +158,7 @@
       <!-- about section end -->
 
       <!-- work process section start -->
-       <section class="max-w-screen-xl mx-auto mt-10 lg:mt-20">
+       <section class="px-4 py-8 max-w-screen-xl mx-auto mt-10 lg:mt-20">
         <div class="flex justify-center mb-4 text-heading">
           <h4 class="text-[16px] font-bold text-para text-center bg-white py-2 px-4 rounded-full flex justify-center items-center gap-2"><i class="fa-solid fa-arrow-right"></i>How we works</h4>
         </div>
@@ -207,7 +210,7 @@
       <!-- work process section end -->
 
       <!-- works section start -->
-       <section class="mt-10">
+       <section class="px-4 py-8 mt-10 max-w-screen-xl mx-auto lg:mt-20">
         <div class="flex justify-center mb-4 text-heading">
           <h4 class="text-[16px] font-bold text-para text-center bg-white py-2 px-4 rounded-full flex justify-center items-center gap-2"><i class="fa-solid fa-arrow-right"></i>Explore our Latest works</h4>
         </div>
@@ -215,7 +218,7 @@
         <p class="font-medium text-center text-[14px] lg:text-[16px] text-para mb-4 lg:mb-6">The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.</p>
 
         <div class="grid grid-cols-1 gap-4 lg:gap-6 lg:grid-cols-12">
-          <div class="col-span-8 flex flex-col lg:flex-row gap-4 bg-white rounded-2xl items-center bg-white p-4" style="border: 1px solid rgb(233, 233, 233);">
+          <div class="lg:col-span-8 flex flex-col lg:flex-row gap-4 bg-white rounded-2xl items-center bg-white p-4" style="border: 1px solid rgb(233, 233, 233);">
             <div>
               <img src="assets/img1.png" class="w-full h-52 object-cover rounded-xl" alt="this is a commercial image">
             </div>
@@ -230,15 +233,15 @@
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl p-4 col-span-4" style="border: 1px solid rgb(233, 233, 233);">
+          <div class="bg-white rounded-2xl p-4 lg:col-span-4" style="border: 1px solid rgb(233, 233, 233);">
             <img src="assets/img2.png" class="w-full object-cover h-52 rounded-xl" alt="just a house image">
           </div>
 
-          <div class="bg-white rounded-2xl p-4 col-span-3" style="border: 1px solid rgb(233, 233, 233);">
+          <div class="bg-white rounded-2xl p-4 lg:col-span-3" style="border: 1px solid rgb(233, 233, 233);">
             <img src="assets/img5.png" class="w-full object-cover h-52 rounded-xl" alt="a house image">
           </div>
 
-          <div class="flex flex-col lg:flex-row col-span-6 gap-3 bg-white rounded-2xl p-4" style="border: 1px solid rgb(233, 233, 233);">
+          <div class="flex flex-col lg:flex-row lg:col-span-6 gap-3 bg-white rounded-2xl p-4" style="border: 1px solid rgb(233, 233, 233);">
             <div>
               <img src="assets/img4.png" class="w-full object-cover h-52 rounded-xl" alt="a house image">
             </div>
@@ -253,7 +256,7 @@
 
           </div>
 
-          <div class="bg-white rounded-2xl p-4 col-span-3" style="border: 1px solid rgb(233, 233, 233);">
+          <div class="bg-white rounded-2xl p-4 lg:col-span-3" style="border: 1px solid rgb(233, 233, 233);">
             <img src="assets/img3.png" alt="this is a house image" class="w-full object-cover h-52 rounded-xl">
           </div>
           
@@ -264,6 +267,43 @@
         </div>
        </section>
       <!-- works section end -->
+
+      <!-- form section start -->
+       <section class="px-4 py-8 mt-10 max-w-screen-xl mx-auto lg:mt-20 bg-bgImg bg-no-repeat bg-cover">
+        <div class="flex justify-center mb-4 text-heading">
+          <h4 class="text-[16px] font-bold text-para text-center bg-white py-2 px-4 rounded-full flex justify-center items-center gap-2"><i class="fa-solid fa-arrow-right"></i>Let's Connect</h4>
+        </div>
+        <h2 class="text-2xl font-bold text-center mb-4 lg:mb-6 lg:text-[40px]">Let's Discuss Next Project</h2>
+        <p class="font-medium text-center text-[14px] lg:text-[16px] text-para mb-4 lg:mb-6">The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+        <div>
+          <form action="#">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 font-medium text-[16px]">
+              <div>
+                <input class="w-full px-5 py-4 rounded-full lg:p-5" style="border: 1px solid rgb(233, 233, 233);" type="text" placeholder="First Name*">
+              </div>
+
+              <div>
+                <input class="w-full px-5 py-4 rounded-full lg:p-5" style="border: 1px solid rgb(233, 233, 233);" type="text" placeholder="Last Name*">
+              </div>
+
+              <div>
+                <input class="w-full px-5 py-4 rounded-full lg:p-5" style="border: 1px solid rgb(233, 233, 233);" type="text" placeholder="Phone Number*">
+              </div>
+
+              <div>
+                <input class="w-full px-5 py-4 rounded-full lg:p-5" style="border: 1px solid rgb(233, 233, 233);" type="text" placeholder="Email Address*">
+              </div>
+
+              <div class="lg:col-span-2">
+                <textarea class="w-full p-5 rounded-3xl h-60" style="border: 1px solid rgb(233, 233, 233);" placeholder="Write your message here"></textarea>
+              </div>
+            </div>
+            <button class="mt-6 text-xl font-extrabold bg-main_color w-full flex gap-3 justify-center items-center px-5 py-3 rounded-full   "><h3>Send Mails</h3> <h3 class="h-8 w-8 bg-black rounded-full flex justify-center items-center text-white"><i class="fa-solid fa-arrow-up rotate-45"></i></h3></button>
+          </form>
+        </div>
+       </section>
+      <!-- form section end -->
      </main>
     <!-- main section end -->
 
